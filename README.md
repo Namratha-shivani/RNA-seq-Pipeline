@@ -17,6 +17,8 @@ The FASTQ files have 4 lines for each sequence :
   <img src="FASTQ file.png" width="600" height="200" alt="Alt Text">
 </p>
 
+## STEP1 - QUALITY CHECK 
+
 ### Quality scores 
 Sequencing quality scores measure the probability that a base is called incorrectly. Each base in a read is assigned a quality score by a phred-like algorithm.
 
@@ -24,10 +26,37 @@ The sequencing quality score of a given base, Q, is defined by the following equ
 <p align="center">
   Q = -10log10(e)
 </p>
-where e is the estimated probability of the base call being wrong.
-* Higher Q scores indicate a smaller probability of error.
-* Lower Q scores can result in a significant portion of the reads being unusable. They may also lead to increased false-positive variant calls, resulting in inaccurate conclusions.
 
+where e is the estimated probability of the base call being wrong.
+- Higher Q scores indicate a smaller probability of error.
+- Lower Q scores can result in a significant portion of the reads being unusable. They may also lead to increased false-positive variant calls, resulting in inaccurate conclusions.
+
+<p align="center">
+  <img src="quality scores.png" width="600" height="200" alt="Alt Text">
+</p>
+
+### FASTQC 
+FastQC aims to provide a QC report which can spot problems which originate either in the sequencer or in the starting library material. It provides the basic statistics, per-base quality, adaptor content, per sequence GC content of each sequence. By examining parameters such as per-base quality scores and sequence GC content, FastQC enables us to identify sequences of high quality that are suitable for analysis. Utilizing high-quality sequences ensures that downstream analyses are based on reliable data, minimizing the risk of biased results and erroneous conclusions. Identifying and excluding low-quality sequences at this initial stage enhances the accuracy and robustness of the entire RNA-seq workflow.
+
+<p align="center">
+  <img src="quality.png" width="600" height="200" alt="Alt Text">
+</p>
+
+_This view shows an overview of the range of quality values across all bases at each position in the FASTQ file._ 
+_Blue line – Mean Quality, The central red line is the median value, The yellow box represents the inter-quartile range (25-75%), The upper and lower whiskers represent the 10% and 90% points_
+
+- A warning will be issued if the lower quartile for any base is less than 10, or if the median for any base is less than 25. 
+- This module will raise a failure if the lower quartile for any base is less than 5 or if the median for any base is less than 20. 
+
+
+
+
+
+
+
+
+
+ 
 
 
 
