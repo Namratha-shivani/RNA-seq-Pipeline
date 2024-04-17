@@ -68,13 +68,13 @@ The mapping is the process of comparing each one of the reads with the reference
 HISAT2 initiates by constructing a graph representation of the reference genome, incorporating variations such as mutations, insertions, and deletions. In this graph, nucleotides are represented as nodes, connected by edges indicating their relationships in the sequence. Nodes are then sorted alphabetically (e.g., adenosine 'A' being ranked as 1), and within each nucleotide, further ranked based on their position. This ranking facilitates the organization of incoming and outgoing edges for each node, which are compiled into a tabular format. This table streamlines computational processes by providing a structured view of the genome graph's connectivity, enhancing efficiency in alignment and variant detection.
 
 <p align="center">
-  <img src="hisat2.png" width="400" height="400" alt="Alt Text">
+  <img src="Hisat2.png" width="400" height="400" alt="Alt Text">
 </p>
 
 To furthur enhance the speed and accuracy of the algorithm, HISAT2 creates a global heirarchial index representing the human genome and variants. Along with this they also contruct local index spanning 57kb of the reference genomes and variants. During the alignment process, HISAT2 first checks the local index for faster lookup of relevant regions. If the desired sequence is not found within this local index, HISAT2 then proceeds to consult the global hierarchical index, which represents the entire human genome and variants.
 
 <p align="center">
-  <img src="hisat2.1.png" width="400" height="400" alt="Alt Text">
+  <img src="Hisat2.1.png" width="400" height="400" alt="Alt Text">
 </p>
 
 
