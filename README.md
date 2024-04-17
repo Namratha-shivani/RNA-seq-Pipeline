@@ -9,5 +9,10 @@ The FASTQ files have 4 lines for each sequence :
 3.	A separator, which is simply a plus (+) sign.
 4.	The base call quality scores. These are Phred +33 encoded, using ASCII characters to represent the numerical quality scores.
 
+<p align="center">
+  <img src="FASTQ file.png" width="400" height="300" alt="Alt Text">
+</p>
+
+
 
 
