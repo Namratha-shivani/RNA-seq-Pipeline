@@ -25,8 +25,8 @@ The sequencing quality score of a given base, Q, is defined by the following equ
   Q = -10log10(e)
 </p>
 where e is the estimated probability of the base call being wrong.
-•	Higher Q scores indicate a smaller probability of error.
-•	Lower Q scores can result in a significant portion of the reads being unusable. They may also lead to increased false-positive variant calls, resulting in inaccurate conclusions.
+* Higher Q scores indicate a smaller probability of error.
+* Lower Q scores can result in a significant portion of the reads being unusable. They may also lead to increased false-positive variant calls, resulting in inaccurate conclusions.
 
 
 
