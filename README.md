@@ -82,6 +82,30 @@ To furthur enhance the speed and accuracy of the algorithm, HISAT2 creates a glo
 </p>
 
 
+## STEP4 - ABUNDANCE ESTIMATION
+
+Abundance estimation involves quantifying the expression levels of transcripts or genes within a biological sample, providing insights into the relative abundance of different RNA molecules.
+
+### FeatureCounts
+A two-level hierarchy is then created for each reference sequence. First, the reference sequence is divided into non-overlapping bins and features are assigned to bins according to their start positions. Within each bin, equal numbers of consecutive features are grouped into blocks. The number of blocks in a bin is the square root of the number of features in that bin (rounded up to the next whole number).
+
+<p align="center">
+  <img src="featurecounts.png" width="400" height="400" alt="Alt Text">
+</p>
+_Features (solid lines under the chromosome) are assigned to bins according to their start positions and grouped into blocks (gray boxes) within each bin. Query reads are compared with genomic bins, then with blocks (dashed arrows) and finally with features (solid arrows). The query read in the figure overlaps with two features in the first block of bin i _
+
+
+Essentially, total read count associated with a gene (meta-feature) = the sum of reads associated with each of the exons (feature) that “belong” to that gene.
+**Input for counting = multiple BAM files + 1 GTF file**
+
+
+
+
+
+
+
+
+
 
 
 
