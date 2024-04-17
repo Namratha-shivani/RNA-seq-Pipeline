@@ -52,7 +52,7 @@ _Blue line – Mean Quality, The central red line is the median value, The yello
 Trimming is a critical preprocessing step in RNA-seq analysis aimed at enhancing the quality of sequencing data. It involves the systematic removal of adaptor content, which can arise from sequencing artifacts or experimental procedures, thereby minimizing their potential interference with downstream analyses. Additionally, trimming targets bases with low quality, as indicated by their quality scores, ensuring that only high-quality bases are retained for further analysis.
 
 <p align="center">
-  <img src="trimming.png" width="400" height="300" alt="Alt Text">
+  <img src="trimming.png" width="400" height="400" alt="Alt Text">
 </p>
 
 **Sliding Window** refers to the number of base pairs examined for quality assessment at a time. In this process, if the average quality of these consecutive base pairs falls below the specified threshold, all base pairs within the window are removed from the sequence.
