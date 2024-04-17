@@ -10,7 +10,7 @@ The FASTQ files have 4 lines for each sequence :
 4.	The base call quality scores. These are Phred +33 encoded, using ASCII characters to represent the numerical quality scores.
 
 <p align="center">
-  <img src="FASTQ file.png" width="400" height="300" alt="Alt Text">
+  <img src="FASTQ file.png" width="600" height="200" alt="Alt Text">
 </p>
 
 
