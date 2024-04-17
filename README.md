@@ -1,6 +1,10 @@
 # RNA-seq-Pipeline
 
-RNA sequencing is used to learn more about which genes are expressed (turned on) in different types of cells and when and how these genes are expressed
+RNA sequencing is used to learn more about which genes are expressed (turned on) in different types of cells and when and how these genes are expressed.
+
+<p align="center">
+  <img src="RNAworkflow.png" width="300" height="400" alt="Alt Text">
+</p>
 
 ## What is FASTQ format ?
 The FASTQ files have 4 lines for each sequence :
