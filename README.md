@@ -63,6 +63,10 @@ For example, in a sliding window of 4:15, the quality of four consecutive base p
 
 The mapping is the process of comparing each one of the reads with the reference genome.
 
+<p align="center">
+  <img src="alignment.png" width="600" height="300" alt="Alt Text">
+</p>
+
 ### HISAT2
 
 HISAT2 initiates by constructing a graph representation of the reference genome, incorporating variations such as mutations, insertions, and deletions. In this graph, nucleotides are represented as nodes, connected by edges indicating their relationships in the sequence. Nodes are then sorted alphabetically (e.g., adenosine 'A' being ranked as 1), and within each nucleotide, further ranked based on their position. This ranking facilitates the organization of incoming and outgoing edges for each node, which are compiled into a tabular format. This table streamlines computational processes by providing a structured view of the genome graph's connectivity, enhancing efficiency in alignment and variant detection.
