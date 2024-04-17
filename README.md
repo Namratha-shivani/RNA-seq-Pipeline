@@ -32,7 +32,7 @@ where e is the estimated probability of the base call being wrong.
 - Lower Q scores can result in a significant portion of the reads being unusable. They may also lead to increased false-positive variant calls, resulting in inaccurate conclusions.
 
 <p align="center">
-  <img src="quality scores.png" width="600" height="200" alt="Alt Text">
+  <img src="quality scores.png" width="600" height="400" alt="Alt Text">
 </p>
 
 ### FASTQC 
