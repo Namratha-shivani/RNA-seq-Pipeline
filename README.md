@@ -32,14 +32,14 @@ where e is the estimated probability of the base call being wrong.
 - Lower Q scores can result in a significant portion of the reads being unusable. They may also lead to increased false-positive variant calls, resulting in inaccurate conclusions.
 
 <p align="center">
-  <img src="quality scores.png" width="600" height="400" alt="Alt Text">
+  <img src="quality scores.png" width="600" height="200" alt="Alt Text">
 </p>
 
 ### FASTQC 
 FastQC aims to provide a QC report which can spot problems which originate either in the sequencer or in the starting library material. It provides the basic statistics, per-base quality, adaptor content, per sequence GC content of each sequence. By examining parameters such as per-base quality scores and sequence GC content, FastQC enables us to identify sequences of high quality that are suitable for analysis. Utilizing high-quality sequences ensures that downstream analyses are based on reliable data, minimizing the risk of biased results and erroneous conclusions. Identifying and excluding low-quality sequences at this initial stage enhances the accuracy and robustness of the entire RNA-seq workflow.
 
 <p align="center">
-  <img src="quality.png" width="600" height="200" alt="Alt Text">
+  <img src="quality.png" width="600" height="400" alt="Alt Text">
 </p>
 
 _This view shows an overview of the range of quality values across all bases at each position in the FASTQ file._ 
