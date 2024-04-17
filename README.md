@@ -103,6 +103,13 @@ Essentially, total read count associated with a gene (meta-feature) = the sum of
 
 
 
+## REFERENCES
+1. https://www.illumina.com/science/technology/next-generation-sequencing/plan-experiments/quality-scores.html
+2. https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+3. Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170 (https://academic.oup.com/bioinformatics/article/30/15/2114/2390096)
+4. Kim, D., Paggi, J.M., Park, C. et al. Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. Nat Biotechnol 37, 907–915 (2019).  (https://www.nature.com/articles/s41587-019-0201-4#citeas)
+5. Liao Y, Smyth GK, Shi W. featureCounts: an efficient general purpose program for assigning sequence reads to genomic features. Bioinformatics. 2014 Apr 1;30(7):923-30. (https://pubmed.ncbi.nlm.nih.gov/24227677/)
+
 
 
 
